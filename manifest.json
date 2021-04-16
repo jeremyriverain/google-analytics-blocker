@@ -1,12 +1,25 @@
 {
   "name": "Google Analytics Blocker",
   "version": "1.0",
-  "manifest_version": 2,
-  "permissions": ["webRequest", "webRequestBlocking", "<all_urls>"],
-  "background": {
-    "scripts": ["background.js"]
+  "manifest_version": 3,
+  "action": {
+    "default_title": "GA Blocker"
   },
-  "browser_action": {
-    "default_title": "Block Google Analytics"
+  "permissions": [
+    "declarativeNetRequest",
+    "declarativeNetRequestFeedback",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
   }
 }
