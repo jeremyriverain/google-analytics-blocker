@@ -1,4 +1,4 @@
-## Google Analytics Blocker
+# Google Analytics Blocker
 
 Browser extensions to experiment around manifest v2 and manifest v3.
 
@@ -9,3 +9,11 @@ This extension blocks requests to scripts `analytics.js`, `gtag.js`, `ga.js`.
 This option is obviously not foolproof but the main thing for me was to experience the new Manifest V3 API.
 
 There is a `mv2` branch which corresponds to the implementation of the manifest
+
+## Installation
+
+```bash
+git clone 
+```
+
+![Installation et utilisation de l'extension](./usage.gif)
