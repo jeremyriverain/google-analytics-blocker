@@ -15,7 +15,7 @@
   },
   "permissions": ["declarativeNetRequest", "declarativeNetRequestFeedback"],
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "service_worker.js"
   },
   "declarative_net_request": {
     "rule_resources": [
