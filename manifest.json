@@ -3,7 +3,15 @@
   "version": "1.0",
   "manifest_version": 3,
   "action": {
+    "default_icon": {
+      "64": "icons/icon_64.png",
+      "128": "icons/icon_128.png"
+    },
     "default_title": "GA Blocker"
+  },
+  "icons": {
+    "64": "icons/icon_64.png",
+    "128": "icons/icon_128.png"
   },
   "permissions": ["declarativeNetRequest", "declarativeNetRequestFeedback"],
   "background": {
